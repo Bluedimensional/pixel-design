@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Art Maker!</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-fluid">
+	<!-- 	<div class="row">
+				<div class="col-md-12 col-border">
+						<h1>Lab: Pixel Art Maker</h1>
+				</div>
+		</div> -->
+		<div class="row">
+				<div class="col-md-3">
+						<!-- Left side -->
+						<div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center">
+
+
+										<form id="sizePicker" class="form-inline">
+												<div class="form-group">
+														<label for="inputHeight">Height:</label>
+														<input class="form-" type="number" id="inputHeight" name="height" min="1" value="16">
+												</div>
+												<div class="form-group">
+														<label for="inputWidth">Width:</label>
+														<input class="form-" type="number" id="inputWidth" name="width" min="1" value="16">
+												</div>
+										</form>
+								</div>
+						</div>
+						<div class="row">
+								<div class="col-md-8 col-md-offset-2 border-container">
+										<div class=" border-container">
+												<div class="col-md-12 col-border">
+														<label for="fillPicker">Fill:</label>
+														<input type="color" id="fillPicker" value="#333333" name="fill">
+														<button class="btn btn-default randomColors" id="randomizeFill">Randomize Fill</button>
+														<label for="borderPicker">Border:</label>
+														<input type="color" id="borderPicker" value="#000000" name="border">
+														<button class="btn btn-default randomColors" id="randomizeBorder">Randomize Border</button>
+														<button class="btn btn-default randomColors" id="randomizeBoth">Randomize Both</button>
+												</div>
+
+
+
+										</div>
+
+
+								</div>
+						</div>
+						<div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center">
+										<button class="btn btn-default" id="createCanvas" type="submit">Create Canvas</button>
+										<button class="btn btn-default" id="fillOddColumns" type="submit">Fill Odd Columns</button>
+										<button class="btn btn-default" id="fillEvenColumns" type="submit">Fill Even Columns</button>
+										<button class="btn btn-default" id="borderSize" type="submit">Border Size</button>
+										<p>
+												<div id="radioGroupBorderSize"><label>
+																										<input type="radio" name="radioGroupBorderSize3" value="3" id="borderSize3">
+																										3</label>
+																								<br>
+																								<label>
+																										<input type="radio" name="radioGroupBorderSize10" value="10" id="borderSize10">
+																										10</label>
+																								<br>
+																								<label>
+																										<input type="radio" name="radioGroupBorderSize15" value="15" id="RadioGroup15">
+																										15</label>
+																								<br></div>
+										</p>
+								</div>
+						</div>
+						<!-- <div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center">
+										<div class="row">
+												<div class="col-md-6">
+														<div class="input-group">
+																<span class="input-group-addon">
+																<input type="checkbox">
+																</span>
+																<input type="text" class="form-control" placeholder="TO DO">
+														</div>
+
+												</div>
+												<div class="col-md-6">
+														<div class="input-group">
+																<span class="input-group-addon">
+																<input type="radio">
+																</span>
+																<input type="text" class="form-control" placeholder="TO DO">
+														</div>
+												</div>
+										</div>
+								</div>
+						</div> -->
+
+
+
+				</div>
+				<div class="col-md-9">
+								<!-- Right Side -->
+								<div id="designCanvas">
+										<h2 id="canvasLabel">Design Canvas</h2>
+								</div>
+								<table id="pixelCanvas">
+								</table>
+						</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+		<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+		<script src="designs.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+<!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ -->
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</div>
+</body>
+</html>

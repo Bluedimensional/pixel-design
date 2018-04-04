@@ -1,0 +1,72 @@
+<!DOCTYPE html><html>
+<head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12"><h1>Lab: Pixel Art Maker</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Left side -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3>Choose Grid Size</h3>
+                    <form id="sizePicker" class="form-inline">
+                     <div class="form-group">
+                            <label for="inputHeight">Height:</label>
+                            <input class="form-" type="number" id="inputHeight" name="height" min="1" value="16">
+                    </div>
+                    <div class="form-group">
+                            <label for="inputWidth">Width:</label>
+                            <input class="form-" type="number" id="inputWidth" name="width" min="1" value="16">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3>Choose Colors</h3>
+                        <div class="form-group">
+                            <label for="colorPicker">Fill:</label>
+                                <input type="color" id="colorPicker" value="#111111">
+                        </div>
+                        <div class="form-group">
+                            <label for="borderPicker">Border:</label>
+                                <input type="color" id="borderPicker" value="#666666">
+                        </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <input class="btn btn-default" id="submitButton" type="submit" value="Create Design Canvas!">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <!-- Right Side -->
+            <div id="designCanvas">
+                    <h2 id="canvasLabel">Design Canvas</h2>
+                </div>
+                <table id="pixelCanvas"></table>
+        </div>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="designs.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </form></body>
+</html>
